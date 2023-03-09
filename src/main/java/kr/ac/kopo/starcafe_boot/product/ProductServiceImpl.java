@@ -7,9 +7,10 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+
 @Service
 @Slf4j
-public class ProductServiceImpl implements ProductService{
+public class ProductServiceImpl implements ProductService {
     final ProductRepository repository;
 
     public ProductServiceImpl(ProductRepository repository) {
@@ -28,7 +29,6 @@ public class ProductServiceImpl implements ProductService{
 
     @Override
     public void save(ProductVo vo) {
-
         ProductEntity entity = ProductEntity
                 .builder()
                 .name(vo.getName())

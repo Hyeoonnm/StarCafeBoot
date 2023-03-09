@@ -40,15 +40,11 @@ public class ProductController {
 
     @GetMapping("/create")
     public String create(){
-
-
         return "product/add";
     }
 
     @PostMapping("/create")
     public String create(ProductVo vo){
-
-
      service.save(vo);
 
      return "redirect:/product/list";

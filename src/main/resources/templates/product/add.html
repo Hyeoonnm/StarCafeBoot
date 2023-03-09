@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    <div>
+        <span>제품명</span>
+        <input type="text" name="name">
+    </div>
+
+    <div>
+        <span>단가</span>
+        <input type="number" name="price">
+    </div>
+
+    <div>
+        <label>구분 : </label>
+        <select name="category">
+            <option selected>Open this select menu</option>
+            <option value="1">음료</option>
+            <option value="2">푸드</option>
+            <option value="3">상품</option>
+            <option value="4">카드</option>
+        </select>
+    </div>
+
+    <div>
+        <label>판매여부 : </label>
+        <select name="status">
+            <option selected>Open this select menu</option>
+            <option value="0">판매 중지</option>
+            <option value="1">판매 중</option>
+        </select>
+    </div>
+
+    <div class="mt-3">
+        <button>등록</button> <a href="list"><button type="button">취소</button></a>
+    </div>
+</form>
+</body>
+</html>
